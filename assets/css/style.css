@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Corleone";
+    src: url(/ECF/assets/fonts/Corleone.ttf);
+}
+@font-face {
+    font-family: "Magical";
+    src: url(/ECF/assets/fonts/magical-world.regular.ttf);
+}
+
+/* Page Index + CSS générique à toutes les pages */
+
+html {
+    background-color: #e6e0e0;
+    width: 90%;
+    margin: auto;
+}
+
+#index{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1{
+    font-size: 150px;
+    text-align: center;
+}
+
+.titre a{
+    text-decoration: none;
+    font-family: 'Corleone';
+    text-decoration: overline underline ;
+    color: darkred;    
+}
+
+.sousTitre{
+    font-family: 'Magical';
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#btnIndex {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btnIndex a{
+    text-decoration: none;    
+    color: blanchedalmond;
+}
+
+#btnIndex button{
+    width: 30%;
+    padding: 20px;
+    margin: 30px;
+    font-size: 18px;
+    text-transform: uppercase;    
+    border-radius: 15px;
+    background-color: darkred;
+    font-family: 'Itim', cursive;
+}
+
+#btnIndex button:hover{
+    opacity: 60%;
+    transition: ease 0.2s;
+    scale: 1.2;
+}
+
+/* Page ajouter + générique au reste du site */
+
+h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+h5{
+    font-family: 'Itim', 'Open Sans';
+    font-size: 30px;
+    font-style: bold;
+    margin: 20px;
+}
+
+#ajouter{
+    visibility: visible;
+}
+
+
+#ajouter, #valider{
+    width: auto;
+    padding: 12px;
+    font-size: 12px;
+    text-transform: uppercase;    
+    border-radius: 8px;
+    background-color: darkred;
+    font-family: 'Itim', cursive;
+    margin-left: 20px;
+    color: blanchedalmond;
+}
+
+#ajouter:hover, #valider:hover{
+    opacity: 60%;
+    scale: 1.2;
+}
+
+#valider:hover{
+    transition: ease 0.2s;
+}
+
+#inputFilm{
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+}
+
+#tri{
+    font-size: 20px;
+    font-family: 'Itim';
+}
+
+#liste{
+   font-family: 'Advent Pro';
+}
+
+#liste table{
+    margin-top: 30px;
+    width: 80%;
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#liste table td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table td button{
+    background-color: darkred;
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+
+table td button:hover{
+    transition: ease 0.2s;
+    scale: 1.2;
+    opacity: 80%;
+}
+
+/* Page consulter */
+
+select{
+    font-size: 15px;
+    font-family: 'Itim';
+    padding: 10px;
+}
+
+#affiche table{
+    width: 180px;
+    height: 200px;
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Advent Pro';
+    text-align: center;
+}
+
+#affiche table th{
+    border: 1px solid black;
+}
+
+#imgFilm{
+    width: 150px;
+    height: 190px;
+    margin: auto;
+}
+
+#affiche{
+    margin-top: 20px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 960px){
+    h1{
+        font-size: 120px;
+    }
+    #btnIndex{
+        width: 80%;
+        justify-content: space-between;
+    }
+    #btnIndex button{
+        width: 160px;
+    }
+
+    input{
+        width: 100px;
+        padding: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 560px){
+    h1{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #btnIndex{
+        width: 100%;
+    }
+    #btnIndex button:hover{
+        scale: none;
+    }
+    #liste table{
+        width: 100%;
+        font-size: 0.7em;
+    }
+    table td button:hover{
+        scale: none;
+        opacity: 0.9;
+    }
+}

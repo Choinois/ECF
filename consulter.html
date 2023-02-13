@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Repertofilms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Itim&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="assets/js/api.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2 class="titre"><a href="index.html"> RepertoFilms</a></h2>
+    <h4 class="sousTitre">
+      Le meilleur répertoire cinématographique francophone !
+    </h4>
+  </header>
+
+  <main>
+    <h5>Rechercher un film :</h5>
+    <div id="recherche">
+      <input type="text" name="rechercheTitre" id="rechercheTitre" placeholder="Entrer un titre" />
+      <input type="number" name="rechercheAnnee" id="rechercheAnnee" placeholder="Entrer une année" />
+      <select name="rechercheType" id="rechercheType">
+        <option value="type">Type</option>
+        <option value="movie">Film</option>
+        <option value="episode">Episode</option>
+        <option value="series">Série</option>
+        <option value="saison">Saison</option>
+      </select>
+      <button type="reset" id="valider">Rechercher</button>
+    </div>
+    <div id="affiche"></div>
+  </main>
+</body>
+
+</html>
